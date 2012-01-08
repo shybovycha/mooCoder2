@@ -1,0 +1,5 @@
+== mooCoder2
+
+**__mooCoder2__** is a second version of my online contest system.
+
+It's aimed to be a decentralized, platform-independent //check server//, simple (user-friendly) //web interface// and some kind of task //management application//.

@@ -1,0 +1,11 @@
+<h3>Solved tasks:</h3>
+
+<div class="solved-tasks">
+    <?php if (count($this->solvedTasks) > 0): ?>
+        <?php foreach ($this->solvedTasks as $task): ?>
+            <a href="tasks.php?id=<?php echo $task['id'] ?>"><?php echo $task['title'] ?></a>
+        <?php endforeach ?>
+    <?php else: ?>
+        <em>nothing to show yet...</em>
+    <?php endif ?>
+</div>

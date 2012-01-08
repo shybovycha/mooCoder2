@@ -1,0 +1,433 @@
+
+========
+21:25:25	26-12-2011
+compilers:`msvc2008`
+
+
+========
+21:35:44	26-12-2011
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'id' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'6'</font> <i>(length=1)</i>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'b4453d1f9f5386a1846e57a3ec95678f'</font> <i>(length=32)</i>
+</pre>
+
+
+========
+21:36:05	26-12-2011
+6
+6
+
+
+========
+21:46:00	26-12-2011
+select server from compilers as A right join solutions as B on A.name = B.compiler where B.id = :solution ;
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  ':solution' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+</pre>
+
+
+========
+22:40:30	26-12-2011
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'ащщ'</font> <i>(length=6)</i>
+</pre>
+
+
+========
+22:40:54	26-12-2011
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'foo'</font> <i>(length=3)</i>
+</pre>
+
+
+========
+23:00:38	26-12-2011
+fully solved
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  0 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'solved' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'11'</font> <i>(length=2)</i>
+</pre>
+
+
+========
+23:00:38	26-12-2011
+never solved
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  0 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'unsolved' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+</pre>
+
+
+========
+23:00:38	26-12-2011
+incomplete
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  0 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'incomplete' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+</pre>
+
+
+========
+10:33:48	29-12-2011
+Could not establish a DB connection.
+Failed with exception:
+SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Trace:
+array(3) {
+  [0]=>
+  array(6) {
+    ["file"]=>
+    string(91) "/home/likewise-open/ISM-ECOMPANY/a.shoobovych/projects/_own_/mooCoder/www/core/Database.php"
+    ["line"]=>
+    int(29)
+    ["function"]=>
+    string(11) "__construct"
+    ["class"]=>
+    string(3) "PDO"
+    ["type"]=>
+    string(2) "->"
+    ["args"]=>
+    array(4) {
+      [0]=>
+      string(36) "mysql:host=localhost;dbname=moocoder"
+      [1]=>
+      string(4) "root"
+      [2]=>
+      string(0) ""
+      [3]=>
+      NULL
+    }
+  }
+  [1]=>
+  array(6) {
+    ["file"]=>
+    string(90) "/home/likewise-open/ISM-ECOMPANY/a.shoobovych/projects/_own_/mooCoder/www/core/include.php"
+    ["line"]=>
+    int(13)
+    ["function"]=>
+    string(7) "connect"
+    ["class"]=>
+    string(8) "Database"
+    ["type"]=>
+    string(2) "::"
+    ["args"]=>
+    array(3) {
+      [0]=>
+      &string(36) "mysql:host=localhost;dbname=moocoder"
+      [1]=>
+      &string(4) "root"
+      [2]=>
+      &string(0) ""
+    }
+  }
+  [2]=>
+  array(4) {
+    ["file"]=>
+    string(83) "/home/likewise-open/ISM-ECOMPANY/a.shoobovych/projects/_own_/mooCoder/www/tasks.php"
+    ["line"]=>
+    int(2)
+    ["args"]=>
+    array(1) {
+      [0]=>
+      string(90) "/home/likewise-open/ISM-ECOMPANY/a.shoobovych/projects/_own_/mooCoder/www/core/include.php"
+    }
+    ["function"]=>
+    string(12) "require_once"
+  }
+}
+
+
+========
+10:33:48	29-12-2011
+Could not query DB: no 'dbconn1' connection found.
+You should call to `Database::connect()` first
+and use its return value as `connectionName` argument
+for `Database::query()` or (!!!UNSAFE!!!) `Database::forceQuery()` methods
+
+
+========
+10:33:48	29-12-2011
+Could not query DB: no 'dbconn1' connection found.
+You should call to `Database::connect()` first
+and use its return value as `connectionName` argument
+for `Database::query()` or (!!!UNSAFE!!!) `Database::forceQuery()` methods
+
+
+========
+10:33:48	29-12-2011
+Could not query DB: no 'dbconn1' connection found.
+You should call to `Database::connect()` first
+and use its return value as `connectionName` argument
+for `Database::query()` or (!!!UNSAFE!!!) `Database::forceQuery()` methods
+
+
+========
+11:30:48	29-12-2011
+object(DataObject)#2 (1) {
+  ["__data":"DataObject":private]=>
+  array(2) {
+    ["email"]=>
+    string(3) "moo"
+    ["password"]=>
+    string(3) "foo"
+  }
+}
+
+
+========
+19:39:09	30-12-2011
+Could not establish a DB connection.
+Failed with exception:
+SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Trace:
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  0 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\Database.php'</font> <i>(length=29)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>29</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'__construct'</font> <i>(length=11)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'PDO'</font> <i>(length=3)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+          3 <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  1 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>13</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'connect'</font> <i>(length=7)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Database'</font> <i>(length=8)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'::'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+  2 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\index.php'</font> <i>(length=21)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'require_once'</font> <i>(length=12)</i>
+</pre>
+
+
+========
+19:39:12	30-12-2011
+Could not establish a DB connection.
+Failed with exception:
+SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Trace:
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  0 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\Database.php'</font> <i>(length=29)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>29</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'__construct'</font> <i>(length=11)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'PDO'</font> <i>(length=3)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+          3 <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  1 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>13</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'connect'</font> <i>(length=7)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Database'</font> <i>(length=8)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'::'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+  2 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\profile.php'</font> <i>(length=23)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'require_once'</font> <i>(length=12)</i>
+</pre>
+
+
+========
+19:39:17	30-12-2011
+Could not establish a DB connection.
+Failed with exception:
+SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Trace:
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  0 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\Database.php'</font> <i>(length=29)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>29</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'__construct'</font> <i>(length=11)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'PDO'</font> <i>(length=3)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+          3 <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  1 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>13</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'connect'</font> <i>(length=7)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Database'</font> <i>(length=8)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'::'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+  2 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\login.php'</font> <i>(length=21)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'require_once'</font> <i>(length=12)</i>
+</pre>
+
+
+========
+19:39:17	30-12-2011
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'foo'</font> <i>(length=3)</i>
+</pre>
+
+
+========
+19:39:17	30-12-2011
+Could not query DB: no 'dbconn1' connection found.
+You should call to `Database::connect()` first
+and use its return value as `connectionName` argument
+for `Database::query()` or (!!!UNSAFE!!!) `Database::forceQuery()` methods
+
+
+========
+19:39:17	30-12-2011
+Could not establish a DB connection.
+Failed with exception:
+SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Trace:
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b>
+  0 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\Database.php'</font> <i>(length=29)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>29</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'__construct'</font> <i>(length=11)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'PDO'</font> <i>(length=3)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+          3 <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  1 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>13</font>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'connect'</font> <i>(length=7)</i>
+      'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Database'</font> <i>(length=8)</i>
+      'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'::'</font> <i>(length=2)</i>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'mysql:host=localhost;dbname=moocoder'</font> <i>(length=36)</i>
+          1 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          2 <font color='#888a85'>=&gt;</font> &amp;<small>string</small> <font color='#cc0000'>'abcABC123'</font> <i>(length=9)</i>
+  2 <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\profile.php'</font> <i>(length=23)</i>
+      'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+      'args' <font color='#888a85'>=&gt;</font> 
+        <b>array</b>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'D:\wamp\www\core\include.php'</font> <i>(length=28)</i>
+      'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'require_once'</font> <i>(length=12)</i>
+</pre>
+
+
+========
+19:40:15	30-12-2011
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'foo'</font> <i>(length=3)</i>
+</pre>
+
+
+========
+22:36:39	02-01-2012
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'foo'</font> <i>(length=3)</i>
+</pre>
+
+
+========
+22:41:49	02-01-2012
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'foo'</font> <i>(length=3)</i>
+</pre>
+
+
+========
+22:47:21	02-01-2012
+<pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>DataObject</i>)[<i>2</i>]
+  <i>private</i> '__data' <font color='#888a85'>=&gt;</font> 
+    <b>array</b>
+      'email' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'moo'</font> <i>(length=3)</i>
+      'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'foo'</font> <i>(length=3)</i>
+</pre>
+

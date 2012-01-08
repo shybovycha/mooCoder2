@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    function turnLoginToRegister()
+    {
+        var div = document.getElementById('account-form-container'), title = document.getElementById('account-form-title'), form = document.getElementById('account-form');
+
+        div.classList.toggle('login');
+        div.classList.toggle('register');
+
+        if (div.classList.contains('login')) {
+            title.innerHTML = 'Log in';
+            form.action = 'login.php';
+        } else {
+            title.innerHTML = 'Create an account';
+            form.action = 'register.php';
+        }
+    }
+</script>
+
+<div id="account-form-container" class="login">
+    <a href="#" onclick="turnLoginToRegister()"><h3 class="no-top-margin" id="account-form-title" >Log in</h3></a>
+
+    <form id="account-form" action="login.php" method="post">
+        <label for="email">E-mail:</label><br />
+        <input type="text" name="email" />
+        <br />
+        <label for="password">Password:</label><br />
+        <input type="password" name="password" />
+        <br />
+        <input type="submit" value="Do it!" />
+    </form>
+</div>

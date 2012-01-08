@@ -1,0 +1,106 @@
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/view/solution_results.phtml on line 24, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   2. Renderer::partial() /home/errorist/projects/moocoder/web/tasks.php:72, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   3. __renderer__->partial() /home/errorist/projects/moocoder/web/core/Renderer.php:67, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   4. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:21, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   5. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   6. Renderer::render() /home/errorist/projects/moocoder/web/view/task.phtml:9, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   7. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:61, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:04:22 2012] [error] [client 127.0.0.1] PHP   8. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=1&solution=53
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/view/solution_results.phtml on line 24, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   2. Renderer::partial() /home/errorist/projects/moocoder/web/tasks.php:72, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   3. __renderer__->partial() /home/errorist/projects/moocoder/web/core/Renderer.php:67, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   4. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:21, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   5. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   6. Renderer::render() /home/errorist/projects/moocoder/web/view/task.phtml:9, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   7. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:61, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:06:42 2012] [error] [client 127.0.0.1] PHP   8. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/view/solution_results.phtml on line 24, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   2. Renderer::partial() /home/errorist/projects/moocoder/web/tasks.php:72, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   3. __renderer__->partial() /home/errorist/projects/moocoder/web/core/Renderer.php:67, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   4. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:21, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   5. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   6. Renderer::render() /home/errorist/projects/moocoder/web/view/task.phtml:9, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   7. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:61, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:18 2012] [error] [client 127.0.0.1] PHP   8. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/view/solution_results.phtml on line 24, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   2. Renderer::partial() /home/errorist/projects/moocoder/web/tasks.php:72, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   3. __renderer__->partial() /home/errorist/projects/moocoder/web/core/Renderer.php:67, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   4. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:21, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   5. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   6. Renderer::render() /home/errorist/projects/moocoder/web/view/task.phtml:9, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   7. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:61, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:08:23 2012] [error] [client 127.0.0.1] PHP   8. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3&solution=55
+[Thu Jan 05 14:51:47 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/index.php
+[Thu Jan 05 14:51:47 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/index.php
+[Thu Jan 05 14:51:47 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/index.php
+[Thu Jan 05 14:51:50 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/tasks.php
+[Thu Jan 05 14:51:50 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php
+[Thu Jan 05 14:51:50 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php
+[Thu Jan 05 14:51:51 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/tasks.php?id=2
+[Thu Jan 05 14:51:51 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=2
+[Thu Jan 05 14:51:51 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=2
+[Thu Jan 05 14:51:54 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:51:54 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:51:54 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:51:56 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/tasks.php?id=2
+[Thu Jan 05 14:51:56 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=2
+[Thu Jan 05 14:51:56 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=2
+[Thu Jan 05 14:52:30 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:30 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:30 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/view/solution_results.phtml on line 24, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   2. Renderer::partial() /home/errorist/projects/moocoder/web/tasks.php:72, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   3. __renderer__->partial() /home/errorist/projects/moocoder/web/core/Renderer.php:67, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   4. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:21, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   5. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   6. Renderer::render() /home/errorist/projects/moocoder/web/view/task.phtml:9, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   7. __renderer__->render() /home/errorist/projects/moocoder/web/core/Renderer.php:61, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:52:55 2012] [error] [client 127.0.0.1] PHP   8. include() /home/errorist/projects/moocoder/web/core/Renderer.php:38, referer: http://moocoder.local/tasks.php?id=3
+[Thu Jan 05 14:53:30 2012] [error] [client 127.0.0.1] PHP Notice:  Trying to get property of non-object in /home/errorist/projects/moocoder/web/tasks.php on line 31, referer: http://moocoder.local/tasks.php?id=3&solution=57
+[Thu Jan 05 14:53:30 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/tasks.php?id=3&solution=57
+[Thu Jan 05 14:53:30 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/tasks.php:0, referer: http://moocoder.local/tasks.php?id=3&solution=57
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Warning:  fopen(/home/errorist/projects/moocoder/web/log/frame.log): failed to open stream: Permission denied in /home/errorist/projects/moocoder/web/core/Log.php on line 29, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/register.php:0, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   2. require() /home/errorist/projects/moocoder/web/register.php:32, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   3. Log::message() /home/errorist/projects/moocoder/web/login.php:6, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   4. fopen() /home/errorist/projects/moocoder/web/core/Log.php:29, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Warning:  fprintf() expects parameter 1 to be resource, boolean given in /home/errorist/projects/moocoder/web/core/Log.php on line 41, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/register.php:0, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   2. require() /home/errorist/projects/moocoder/web/register.php:32, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   3. Log::message() /home/errorist/projects/moocoder/web/login.php:6, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   4. fprintf() /home/errorist/projects/moocoder/web/core/Log.php:41, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Warning:  fprintf() expects parameter 1 to be resource, boolean given in /home/errorist/projects/moocoder/web/core/Log.php on line 47, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/register.php:0, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   2. require() /home/errorist/projects/moocoder/web/register.php:32, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   3. Log::message() /home/errorist/projects/moocoder/web/login.php:6, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   4. fprintf() /home/errorist/projects/moocoder/web/core/Log.php:47, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Warning:  fprintf() expects parameter 1 to be resource, boolean given in /home/errorist/projects/moocoder/web/core/Log.php on line 50, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/register.php:0, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   2. require() /home/errorist/projects/moocoder/web/register.php:32, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   3. Log::message() /home/errorist/projects/moocoder/web/login.php:6, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   4. fprintf() /home/errorist/projects/moocoder/web/core/Log.php:50, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/errorist/projects/moocoder/web/core/Log.php on line 52, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/errorist/projects/moocoder/web/register.php:0, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   2. require() /home/errorist/projects/moocoder/web/register.php:32, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   3. Log::message() /home/errorist/projects/moocoder/web/login.php:6, referer: http://moocoder.local/profile.php
+[Thu Jan 05 14:54:00 2012] [error] [client 127.0.0.1] PHP   4. fclose() /home/errorist/projects/moocoder/web/core/Log.php:52, referer: http://moocoder.local/profile.php
+[Sat Jan 07 12:31:47 2012] [error] [client 127.0.0.1] File does not exist: /home/errorist/projects/moocoder/web/favicon.ico
+[Sat Jan 07 12:31:47 2012] [error] [client 127.0.0.1] File does not exist: /home/errorist/projects/moocoder/web/favicon.ico

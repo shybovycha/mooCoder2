@@ -1,0 +1,90 @@
+body {
+    background-color: #ebdd9a;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu {
+    clear: both;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: #cbb8b8;
+    margin: 10px 0 30px 0;
+}
+
+.top-menu a {
+    text-decoration: none;
+    padding: 0 30px 0 30px;
+    font-size: 20px;
+}
+
+.top-menu a:hover {
+    background-color: cadetblue;
+    padding: 10px 30px 10px 30px;
+}
+
+.top-menu .prev-page {
+    display: block;
+    float: left;
+}
+
+.top-menu .next-page {
+    display: block;
+    float: right;
+}
+
+.top-menu .page-title {
+    display: inline;
+    text-align: center;
+}
+
+.content {
+    padding: 0 30px 20px 30px;
+}
+
+.code-area {
+    width: 100%;
+}
+
+.solution-toolbar {
+    margin: 0 0 10px 0;
+}
+
+.runtime-error-answer {
+    color: #B01111;
+}
+
+.timeout-answer {
+    color: #0F26A9;
+}
+
+.wrong-answer {
+    color: #D06F07;
+}
+
+.correct-answer {
+    color: #2CA117;
+}
+
+.highcharts-container {
+    overflow: visible !important;
+    top: 100px !important;
+}
+
+.content h3 {
+    margin-top: 0;
+}
+
+.attempt {
+    display: inline;
+    margin: 2px;
+}
+
+.attempt.correct {
+    background-color: #19C08E;
+}
+
+.attempt.incorrect {
+    background-color: #C05919;
+}

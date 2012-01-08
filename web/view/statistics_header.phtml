@@ -1,0 +1,51 @@
+<script src="media/highcharts/highcharts.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var chart1;
+            $(document).ready(function() {
+                chart1 = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'chart-container',
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+
+                        style: {
+                            overflow: 'visible',
+                        }
+                    },
+                    title: {
+                        text: 'Task Hardness'
+                    },
+                    tooltip: {
+                        formatter: function() {
+                            return '<b>' + this.point.name + '</b>: ' + this.percentage + ' % (' + this.y + ')';
+                        }
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                color: '#000000',
+                                connectorColor: '#000000',
+                                formatter: function() {
+                                    return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %';
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'series1',
+                        data: [
+                            ['Fully Solved', <?php echo $this->solvedTasks ?>],
+                            ['Never Solved', <?php echo $this->unsolvedTasks ?>],
+                            ['Incomplete', <?php echo $this->incompleteTasks ?>],
+                            // ['Untested', <?php echo $this->untestedTasks ?>],
+                        ]
+                    }]
+                });
+            });
+</script>

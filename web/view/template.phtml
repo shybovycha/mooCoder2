@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        
+        <title><?php echo $this->title ?></title>
+        
+        <link rel="stylesheet" type="text/css" href="/media/main.css" media="all" />
+
+        <script src="media/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+        <?php echo $this->header ?>
+    </head>
+
+    <body>
+        <div class="top-menu">
+            <?php echo $this->topMenu ?>
+
+            <div class="navigation-menu">
+                <a href="index.php">About</a>
+                <a href="tasks.php">Tasks</a>
+                <a href="statistics.php">Statistics</a>
+                <a href="profile.php">My Profile</a>
+                <?php if (isset($_SESSION['user'])): ?>
+                <a href="logout.php">Log Out</a>
+                <?php endif ?>
+            </div>
+        </div>
+        
+        <div class="content">
+            <?php echo $this->content ?>
+        </div>
+    </body>
+</html>

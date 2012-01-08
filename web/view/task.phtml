@@ -1,0 +1,56 @@
+<?php echo $this->task->description ?>
+
+<hr />
+
+<?php 
+    if (is_array($this->results) && count($this->results)):
+        Renderer::render('view/solution_results.phtml', array(
+            'results' => $this->results
+        )); 
+
+        echo '<hr />';
+    endif;
+?>
+
+<div class="solve">
+    <form action="solve.php?task=<?php echo $this->task->id ?>" method="post">
+        <div class="solution-toolbar">
+            <div class="compiler">
+                <label for="compiler">Compile with</label>
+                <select name="compiler">
+                    <?php foreach ($this->compilers as $compiler): ?>
+                        <option value="<?php echo $compiler['name'] ?>"><?php echo $compiler['title'] ?></option>
+                    <?php endforeach ?>
+                </select>
+            </div>
+
+            <div class="theme">
+                <a href="#" onclick="changeTheme(); return false;">Toggle editor theme</a>
+            </div>
+        </div>
+
+        <textarea name="code" class="code-area" rows="15"><?php if ($this->solution && $this->solution->code) echo $this->solution->code; ?></textarea>
+
+        <div style="text-align: center; margin: 10px;">
+            <input type="submit" value="Solve!" />
+        </div>
+    </form>
+
+    <?php if ($this->solution): ?>
+        <form action="solve.php?task=<?php echo $this->task->id ?>&solution=<?php echo $this->solution->id ?>" method="post">
+            <div style="text-align: center; margin: 10px;">
+                <input type="submit" value="Test again..." />
+            </div>
+        </form>
+    <?php endif ?>
+</div>
+
+<?php if (isset($_SESSION['user'])): ?>
+    <div class="attempts">
+        <?php foreach ($this->attempts as $attempt): ?>
+            <div class="attempt <?php echo (floatval($attempt['completeness']) < 1.0) ? 'incorrect' : 'correct' ?>">
+                <a href="tasks.php?id=<?php echo $this->task->id ?>&solution=<?php echo $attempt['solution_id'] ?>" title="<?php echo $attempt['completeness'] ?>"><?php echo $attempt['solution_id'] ?></a>
+            </div>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>

@@ -1,0 +1,12 @@
+<config>
+        <db>
+            <host>jdbc:mysql://localhost/moocoder</host>
+            <driver>com.mysql.jdbc.Driver</driver>
+            <user>root</user>
+            <password>abc123</password>
+        </db>
+
+        <server>
+                <port>3708</port>
+        </server>
+</config>

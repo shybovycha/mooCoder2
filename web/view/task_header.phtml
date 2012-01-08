@@ -1,0 +1,30 @@
+<script src="/media/codemirror/codemirror.js"></script>
+<script src="/media/codemirror/mode/clike/clike.js"></script>
+<script src="/media/codemirror/mode/pascal/pascal.js"></script>
+
+<link rel="stylesheet" href="/media/codemirror/codemirror.css" />
+<link rel="stylesheet" href="/media/codemirror/theme/monokai.css" />
+<link rel="stylesheet" href="/media/codemirror/theme/eclipse.css" />
+
+<script type="text/javascript">
+    var editor;
+
+    function changeTheme() {
+        var t = editor.getOption('theme'), t = (t == 'eclipse') ? 'monokai' : 'eclipse';
+        editor.setOption('theme', t);
+    }
+
+    function changeLanguage(l) {
+        editor.setOption('mode', l);
+    }
+
+    window.onload = function() {
+        editor = CodeMirror.fromTextArea(document.getElementsByName('code')[0], {
+            lineNumbers: true,
+            matchBrackets: true,
+            tabMode: 'indent',
+            mode: 'text/x-c++src',
+            theme: 'eclipse'
+        });
+    }
+</script>

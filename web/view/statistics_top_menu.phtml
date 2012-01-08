@@ -1,0 +1,15 @@
+<?php if (intval($this->page) > 1): ?>
+    <div class="prev-page">
+        <a href="#">&lt;</a>
+    </div>
+<?php endif ?>
+
+<div class="page-title">
+    <a href="#"><?php echo $this->pageTitle ?></a>
+</div>
+
+<?php if (intval($this->page) < intval($this->totalCount)): ?>
+    <div class="next-page">
+        <a href="tasks.php?id=<?php echo intval($this->page) + 1 ?>">&gt;</a>
+    </div>
+<?php endif ?>

@@ -1,0 +1,25 @@
+<div class="results">
+    <?php $i = 1; ?>
+    <?php foreach ($this->results as $result): ?>
+        <?php if (($result['status'] & 1) || ($result['status'] & 2)): ?>
+            <span class="runtime-error-answer"><?php echo $i ?>. Runtime Error</span>
+        <?php elseif ($result['status'] & 4): ?>
+            <span class="timeout-answer"><?php echo $i ?>. Timeout</span>
+        <?php elseif (($result['status'] & 8) || (($result['status'] & 32) && !($result['status'] & 16))): ?>
+            <span class="wrong-answer"><?php echo $i ?>. Wrong answer</span>
+        <?php elseif (($result['status'] & 48)): ?>
+            <span class="correct-answer"><?php echo $i ?>. Correct</span>
+        <?php endif ?>
+
+        <?php $i++; ?>
+
+        &nbsp;
+    <?php endforeach ?>
+</div>
+
+<!--<div class="solution-code">
+    <div class="theme">
+        <a href="#" onclick="changeTheme(); return false;">Toggle editor theme</a>
+    </div>
+    <textarea name="code" class="code-area" rows="15"><?php echo htmlspecialchars($this->solution->code) ?></textarea>
+</div>-->

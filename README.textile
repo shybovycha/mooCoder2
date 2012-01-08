@@ -2,4 +2,4 @@ h1. mooCoder2
 
 *+mooCoder2+* is a second version of my online contest system.
 
-It's aimed to be a decentralized, platform-independent ?check server?, simple (user-friendly) ?web interface? and some kind of task ?management application?.
+It's aimed to be a decentralized, platform-independent ??check server??, simple (user-friendly) ??web interface?? and some kind of task ??management application??.
